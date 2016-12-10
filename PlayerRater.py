@@ -29,7 +29,14 @@ Mark Scheifele = 29 goals 32 assists, 71 games played
 Ryan Johanssen = 14, 46, 80 games
 Bo Horvat = 16, 24, 82 games
 '''
-print("Connor Mcdavid")
+
+'''Make A Big Dictionary Of Players like this: {name:Name, goals: goals, assists: assists, gamesPlayed: gamesPlayed} }
+'''
+
+'''
+Loop through the entire array of dictionaries and Print each player's name, goals, assists and games played
+'''
+print("Connor McDavid")
 print(rate_player(points_per_game(points_calc(16,32),45)))
 
 print("\nSidney Crosby")
@@ -47,3 +54,9 @@ print(rate_player(points_per_game(points_calc(16,24),82)))
 print("\nPatrick Kane")
 print(rate_player(points_per_game(points_calc(46,60),82)))
 
+players= [{'name':'Connor McDavid', 'goals':16, 'assists':32, 'gamesPlayed':45}, {'name': 'Sidney Crosby', 'goals':36, 'assists':49, 'gamesPlayed':80}, {'name': 'Mark Scheifele', 'goals':29, 'assists':32, 
+'gamesPlayed':71}, {'name': 'Ryan Johanssen', 'goals':14, 'assists':46, 'gamesPlayed': 80}, {'name': 'Big B', 'goals':16, 'assists':24, 'gamesPlayed':82}, {'name': 'Patrick Kane', 'goals':46, 'assists':60, 
+'gamesPlayed':82}]
+
+for p in players:
+    print (p)
